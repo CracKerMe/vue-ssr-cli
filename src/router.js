@@ -7,6 +7,7 @@ Vue.use(Router)
 export function createRouter() {
   return new Router({
     mode: 'history',
-    routes: [{ path: '/', component: Home }]
+    routes: [{ path: '/', component: Home },
+    { path: '/singer/:id', component: () => import('./views/Singer.vue') }]
   })
 }
