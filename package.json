@@ -1,0 +1,30 @@
+{
+  "name": "vue-ssr-cli",
+  "version": "1.0.0",
+  "description": "Vue-SSR base code,for starter & ssr developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CracKerMe/vue-ssr-cli.git"
+  },
+  "keywords": [
+    "vue",
+    "vue-ssr",
+    "ssr",
+    "starter"
+  ],
+  "author": "AppleSun (1160948478@qq.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CracKerMe/vue-ssr-cli/issues"
+  },
+  "homepage": "https://github.com/CracKerMe/vue-ssr-cli#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "vue": "^2.6.10",
+    "vue-server-renderer": "^2.6.10"
+  }
+}
