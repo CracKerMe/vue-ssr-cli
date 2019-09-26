@@ -5,7 +5,11 @@
     <div v-if="singer.introduction.length>0">
       <h2>歌手介绍</h2>
       <div>
-        <div class="intro-item" v-for="(intro, index) in singer.introduction" :key="index">
+        <div
+          class="intro-item"
+          v-for="(intro, index) in singer.introduction"
+          :key="index"
+        >
           <h4>{{intro.ti}}</h4>
           <p>{{intro.txt}}</p>
         </div>
@@ -15,15 +19,15 @@
 </template>
 
 <script>
-  export default {
-    name: 'Singer',
-      asyncData({ store, route }) {
-      return store.dispatch("fetchSingerDetail", route.params.id)
-    },
-    computed: {
-      singer () {
-        return this.$store.state.singer
-      }
-    },
-  }
+export default {
+  name: 'Singer',
+  asyncData ({ store, route }) {
+    return store.dispatch("a_fetchSingerDetail", route.params.id)
+  },
+  computed: {
+    singer () {
+      return this.$store.getters.singerDetail
+    }
+  },
+}
 </script>

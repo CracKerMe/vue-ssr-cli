@@ -4,9 +4,19 @@
     <div class="singers-wrap">
       <h3>歌手列表</h3>
       <div>
-        <div class="singer-item" v-for="singer in singerLists" :key="singer.id">
-          <router-link :to="'singer/'+singer.id" target="_blank">
-            <img :src="singer.picUrl" alt="">
+        <div
+          class="singer-item"
+          v-for="singer in singerLists"
+          :key="singer.id"
+        >
+          <router-link
+            :to="'singer/'+singer.id"
+            target="_blank"
+          >
+            <img
+              :src="singer.picUrl"
+              alt=""
+            >
             <p>{{singer.name}}</p>
             <p><span>专辑数量: {{singer.albumSize}}</span><br /><span>歌曲数量: {{singer.musicSize}}</span></p>
           </router-link>
@@ -19,8 +29,8 @@
 <script>
 export default {
   name: 'Home',
-  asyncData({ store, route }) {
-    return store.dispatch("fetchSinger")
+  asyncData ({ store, route }) {
+    return store.dispatch("a_fetchSinger")
   },
   metaInfo: {
     title: 'SEO-Meta-Title', // set a title
@@ -35,7 +45,7 @@ export default {
   },
   computed: {
     singerLists () {
-      return this.$store.state.list
+      return this.$store.getters.homeSinger
     }
   },
   data () {

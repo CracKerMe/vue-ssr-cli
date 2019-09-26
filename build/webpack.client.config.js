@@ -3,7 +3,7 @@ const merge = require('webpack-merge')
 const base = require('./webpack.base.config')
 const VueSSRClientPlugin = require('vue-server-renderer/client-plugin')
 
- const config = merge(base, {
+const config = merge(base, {
   mode: 'development',
   entry: {
     app: './src/entry-client.js'
