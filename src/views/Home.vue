@@ -22,6 +22,17 @@ export default {
   asyncData({ store, route }) {
     return store.dispatch("fetchSinger")
   },
+  metaInfo: {
+    title: 'SEO-Meta-Title', // set a title
+    meta: [{                 // set meta
+      name: 'keyWords',
+      content: 'VUE,SSR,vue-ssr,PromiseX'
+    }],
+    link: [{                 // set link
+      rel: 'asstes',
+      href: 'https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css'
+    }]
+  },
   computed: {
     singerLists () {
       return this.$store.state.list
@@ -36,9 +47,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* 我太懒了 不想放在reset.css里面 */
-* {margin: 0;padding: 0;}
-a {text-decoration: none;color: #666666;}
 .singers-wrap {
   width: 1170px;
   margin: 0 auto;
@@ -49,7 +57,7 @@ a {text-decoration: none;color: #666666;}
 }
 .singer-item {
   width: 130px;
-  padding-left: 17px;
+  margin-left: 17px;
   float: left;
   margin-bottom: 15px;
   a {

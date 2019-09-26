@@ -46,3 +46,9 @@ npm start
   ```
   npm i css-loader node-sass sass-loader style-loader optimize-css-assets-webpack-plugin uglifyjs-webpack-plugin mini-css-extract-plugin -S-D
   ```
+
+4. 配置缓存以及meta-seo
+  node 安装命令如下
+  ```
+  npm i lru-cache vue-meta-info -S-D
+  ```

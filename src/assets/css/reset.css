@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-style: normal;
+  outline: none;
+}
+
+body {
+  color: #666;
+  background: #f4f4f4;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: #666666;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border: none;
+  overflow: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input,
+textarea {
+  border: none;
+}
+
+input[type='search'] {
+  -webkit-appearance: none;
+}
+
+/*输入框默认字体样式颜色*/
+:-moz-placeholder,
+::-moz-placeholder,
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#app {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.por {
+  position: relative;
+}
+
+.poa {
+  position: absolute;
+}
+
+.pof {
+  position: fixed;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.iblock {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

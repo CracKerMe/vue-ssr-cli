@@ -4,7 +4,11 @@ import { createRouter } from './router'
 import { createStore } from './store'
 
  import { sync } from 'vuex-router-sync'
-
+ import MetaInfo from 'vue-meta-info'
+ import axios from 'axios'
+ import './assets/css/reset.css'
+ Vue.use(MetaInfo)
+ Object.defineProperty(Vue.prototype, '$axios', { value: axios })
 export function createApp(context) {
   const router = createRouter()
   const store = createStore();
