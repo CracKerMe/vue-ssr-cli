@@ -21,6 +21,9 @@ npm start
 ```
 
 
+### 项目截图
+![首页](https://github.com/CracKerMe/demos/blob/master/ssr-picture1.png?raw=true)
+![歌手页面](https://github.com/CracKerMe/demos/blob/master/ssr-picture2.png?raw=true)
 
 
 ### Step by step:
